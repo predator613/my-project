@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Отзывы об отелях</title>
+    <style>
+        .card-class {
+            margin-bottom: 20px;
+        }
+        .card-header {
+            height: 35px;
+            background-color: #808080;
+        }
+    </style>
+</head>
+<body>
+<div class="container my-4">
+    <form name="addreviewerForm">
+        <div class="mb-3">
+            <label class="form-label">Выберите отель:</label>
+            <select id="categorySelect" class="form-select">
+                <option value="Club Hotel Sera ★★★★, Анталья">Club Hotel Sera ★★★★, Анталья</option>
+                <option value="Dobedan Exclusive Hotel & Spa ★★★★, Белек">Dobedan Exclusive Hotel & Spa ★★★★, Белек</option>
+            </select>
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label">Имя:</label>
+            <input name="name" type="text" class="form-control" placeholder="Ваше имя" required>
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label">Отзыв:</label>
+            <textarea name="description" class="form-control" placeholder="Ваш отзыв" required></textarea>
+        </div>
+        
+        <button type="button" class="btn btn-primary" onclick="addreviewer()">Оставить отзыв</button>
+    </form>
+    
+    <div id="reviewerContainer" class="mt-4"></div>
+</div>
+
+<script src="todo.js"></script>
+</body>
+</html>

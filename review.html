@@ -1,0 +1,89 @@
+<!doctype html>
+
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="reviewer.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>BSHotels review</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+		</header>
+		
+		<div class="container my-4" id="toDoContainer">
+			<form name="addreviewerForm">
+				<div class="form-group">
+					<label for="choose_hotel">Выберите отель:</label>
+					<select id="categorySelect" name="category">
+						<option value="first">Club Hotel Sera ★★★★, Анталья</option>
+						<option value="second">Dobedan Exclusive Hotel & Spa ★★★★, Белек</option>
+						<option value="third">Starlight Resort Hotel ★★★★, Сиде</option>
+						<option value="fourd">Swandor Hotels & Resorts TopKapi Palace ★★★★, Кунду</option>
+						<option value="five">Mirage Park Resort ★★★★, Кемер</option>
+					</select>
+				</div>
+				
+				<div class="form-group">
+					<div class="col-10">
+						<label for="name">Имя:</label>
+						<input name="name" type="text" placeholder="Напишите свое имя">
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<div class="col-10">
+						<label for="description">Отзыв:</label>
+						<textarea name="description" placeholder="Ваш отзыв"></textarea>
+					</div>
+				</div>
+				
+				<div class="col d-flex justify-content-center">
+					<button type="button" class="submit-btn" onclick="addreviewer()">
+						Оставить отзыв
+					</button>
+				</div>
+            </div>
+        </form>
+
+        <!--        СТАТИЧНЫЙ ПРИМЕР КАРТОЧКИ (то, как она может выглядеть)-->
+        <div class="row my-3" id="todoitem9998">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header" style="height: 35px; background-color: #198754"></div>
+                    <div class="card-body">
+                        <h5 class="card-title"> Название самой интересной задачи </h5>
+                        <p class="card-text"> Описание задачи, описание задачи, описание задачи, описание задачи,
+                            описание задачи, описание задачи, описание задачи, описание задачи, описание задачи,
+                            описание задачи, описание задачи, описание задачи, описание задачи, описание задачи.</p>
+                        <!--кнопка задизейблена-->
+                        <button type="button" class="btn btn btn-link" disabled> Удалить задачу </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--        СТАТИЧНЫЙ ПРИМЕР КАРТОЧКИ (то, как она может выглядеть)-->
+        <div class="row my-3" id="todoitem9999">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header" style="height: 35px; background-color: #6C757D"></div>
+                    <div class="card-body">
+                        <h5 class="card-title"> Не самая интересная задача </h5>
+                        <p class="card-text"> Очень короткое описание.</p>
+                        <!--кнопка задизейблена-->
+                        <button type="button" class="btn btn btn-link" disabled> Удалить задачу </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Manifest -->
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- Service Worker -->
+    <script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+            .then(registration => {
+            console.log('ServiceWorker registration successful');
+            })
+            .catch(err => {
+            console.log('ServiceWorker registration failed: ', err);
+            });
+        });
+    }
+    </script>
+
+    <!-- Mobile meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>BTH - Best Turkish hotels</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-overlay"></div>
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Топ 5 лучших отелей Турции</h1>
+                </div>
+                <nav class="menu">
+                    <a class="menu_item" href="main_page.html">Главная</a>
+                    <a class="menu_item" href="feedback.html">Обратная связь</a>
+                    <a class="menu_item" href="#contacts">Контакты</a>
+					<a class="menu_item" href="review.html">Оставить отзыв</a>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <section class="about">
+                <p>Выбрать среди отелей Турции непросто. Они предлагают головокружительный набор услуг, а описания блещут бесконечным набором эксклюзивных опций.</p>
+                <p>Если боитесь ошибиться – ориентируйтесь на личный опыт других туристов.!</p>
+                <p>Мы сделали подборку самых популярных отелей Турции, о которых туристы отзываются только превосходно</p>
+            </section>
+
+            <section class="hotels-blocks" id="tours">
+                <h2 class="section-title">Топ отелей</h2>
+
+                <div class="top-hotels">
+                    <a href="first hotel.html" class="top_hotel first">
+                        <div class="block-content">
+                            <h3>Club Hotel Sera ★★★★★, Анталья</h3>
+                            <p>Пятизвездочный отель на первой линии самого популярного курорта Турции – Антальи.</p>
+                        </div>
+                    </a>
+					
+					<a href="second hotel.html" class="top_hotel second">
+                        <div class="block-content">
+                            <h3>Dobedan Exclusive Hotel & Spa ★★★★★, Белек</h3>
+                            <p>Завсегдатай всех турецких топов – Алва Донна в Белеке!</p>
+                        </div>
+                    </a>
+
+                    <a href="third hotel.html" class="top_hotel third">
+                        <div class="block-content">
+                            <h3>Starlight Resort Hotel ★★★★★, Сиде</h3>
+                            <p>Еще один постоянный участник списков популярных отелей Турции, на этот раз из Сиде.</p>
+                        </div>
+                    </a>
+
+                    <a href="four hotel.html" class="top_hotel four">
+                        <div class="block-content">
+                            <h3>Swandor Hotels & Resorts Topkapi Palace ★★★★★, Кунду</h3>
+                            <p>Великая Османская империя в основе архитектуры, а главным вдохновителем послужил легендарный дворец османских правителей Топкапы.</p>
+                        </div>
+                    </a>
+					
+					<a href="five hotel.html" class="top_hotel five">
+                        <div class="block-content">
+                            <h3>Mirage Park Resort ★★★★★, Кемер</h3>
+                            <p>Ты у подножия Таврских гор. Рядом шумит прибой Средиземного моря, а свой великолепный сервис предлагает один из лучших отелей Кемера.</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+			
+		<footer class="footer" id="contacts">
+            <div class="footer-content">
+                <p>Телефон:+8(800)-555-35-35</p>
+                <p>Email: bst.turkey@yandex.ru</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+		
